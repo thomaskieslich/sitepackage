@@ -1,0 +1,122 @@
+.menu-main {
+    background-color: $dark-gray;
+    width: 100%;
+    z-index: 9999;
+    a, .spacer {
+        color: $white;
+    }
+    li.current > span {
+        color: $light-gray;
+        display: block;
+        line-height: 1;
+        padding: $dropdownmenu-padding;
+    }
+    li.spacer > span {
+        color: $white;
+        display: block;
+        line-height: 1;
+        padding: $dropdownmenu-padding;
+        text-transform: uppercase;
+    }
+    @include breakpoint(medium down) {
+        //li {
+        //    border-bottom: 1px solid $white;
+        //    &:first-child {
+        //        border-top: 1px solid $white;
+        //    }
+        //    &:last-child {
+        //        border-bottom: none;
+        //    }
+        //}
+    }
+
+    @include breakpoint(medium) {
+        > ul {
+            @include grid-row();
+        }
+        .is-submenu-item {
+            border-bottom: 1px solid $white;
+            &:first-child {
+                //border-top: 1px solid $white;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        & > ul > li:first-child > a {
+            //padding-left: 0;
+        }
+        & > ul > li:last-child > a {
+            //padding-right: 0;
+        }
+    }
+}
+
+.menu-sub {
+    li {
+        a {
+            font-size: 16px;
+            color: get-color(secondary);
+            padding-left: 0;
+        }
+        &.active a {
+            background-color: transparent;
+            color: $black;
+        }
+    }
+
+}
+
+.top-bar-right {
+    position: relative;
+}
+
+.menu-language {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    list-style: none;
+    margin: 0;
+    font-size: 85%;
+    li {
+        display: table-cell;
+        text-align: right;
+        &.active a {
+            color: get-color(primary);
+        }
+        a, > span {
+            padding: 0.4rem 0.2rem;
+            color: get-color(secondary);
+        }
+        &.text-muted span {
+            color: $medium-gray;
+        }
+    }
+}
+
+.menu-meta {
+    margin-top: 23px;
+    font-size: 85%;
+    li {
+        //display: table-cell;
+        //text-align: right;
+        &.active a {
+            //color: get-color(primary);
+            background: none;
+        }
+        a, > span {
+            //padding: 0.4rem 0.6rem;
+            color: get-color(secondary);
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        &.text-muted span {
+            color: $medium-gray;
+        }
+    }
+}
+
+.menu-breadcrumb {
+    padding-left: 1rem;
+}

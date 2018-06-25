@@ -1,0 +1,55 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+
+  &.layout-2{
+    padding-top: 40px;
+  }
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  width: auto;
+  height: auto;
+  right: 8px;
+  z-index: 9999;
+  display: none;
+
+  border: 1px solid $dark-gray;
+  padding: 0 8px;
+  background-color: rgba(#444, 0.5);
+  * {
+    color: $white;
+  }
+
+  > a {
+    display: block;
+    @include fa-icon('\f0d8', 42);
+  }
+
+  > button {
+    @include fa-icon('\f0c9', 28);
+    cursor: pointer;
+  }
+
+  @include breakpoint(medium up) {
+    > a {
+      @include fa-icon('\f0d8', 56);
+    }
+    > button {
+      @include fa-icon('\f0c9', 36);
+    }
+  }
+
+  @include breakpoint(large) {
+    //right: 160px;
+    > button {
+      //display: none;
+    }
+  }
+
+}
+

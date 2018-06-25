@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:sitepackage/Configuration/PageTS/Library" extensions="ts,tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:sitepackage/Configuration/PageTS/BackendLayouts" extensions="ts,tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:sitepackage/Configuration/PageTS/Rte" extensions="ts,tsconfig">

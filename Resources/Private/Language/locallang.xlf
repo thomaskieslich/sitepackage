@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file datatype="plaintext" original="messages" product-name="sitepackage"
+		  source-language="en">
+		<header/>
+		<body>
+			<trans-unit id="belayout_default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="belayout_1">
+				<source>Home</source>
+			</trans-unit>
+			<trans-unit id="belayout_2">
+				<source>Layout 2</source>
+			</trans-unit>
+
+			<trans-unit id="belayout_col">
+				<source>Column</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_0">
+				<source>Main</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_1">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_2">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_4">
+				<source>Header</source>
+			</trans-unit>
+
+			<trans-unit id="belayout_col_10">
+				<source>Footer: Left</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_11">
+				<source>Footer: Middle</source>
+			</trans-unit>
+			<trans-unit id="belayout_col_12">
+				<source>Footer: Right</source>
+			</trans-unit>
+
+			<trans-unit id="belayout_col_30">
+				<source>Stage</source>
+			</trans-unit>
+
+			<trans-unit id="page_layout.1">
+				<source>Yellow Background</source>
+			</trans-unit>
+			<trans-unit id="page_layout.2">
+				<source>White Background</source>
+			</trans-unit>
+
+			<!--Content Elements-->
+			<trans-unit id="celayout_1">
+				<source>BG 1</source>
+			</trans-unit>
+			<trans-unit id="celayout_2">
+				<source>BG 2</source>
+			</trans-unit>
+			<trans-unit id="celayout_3">
+				<source>BG 3</source>
+			</trans-unit>
+
+			<trans-unit id="tca.div_content">
+				<source>Content</source>
+			</trans-unit>
+
+			<trans-unit id="content.label.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="content.label.teaserimage">
+				<source>Teaser Image</source>
+			</trans-unit>
+			<trans-unit id="content.label.download">
+				<source>Download</source>
+			</trans-unit>
+			<trans-unit id="content.label.video">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="content.label.youtubeid">
+				<source>YouTube ID</source>
+			</trans-unit>
+			<trans-unit id="content.label.cover">
+				<source>Cover</source>
+			</trans-unit>
+			<trans-unit id="content.label.areamap">
+				<source>Image Area Map</source>
+			</trans-unit>
+
+			<trans-unit id="content.download">
+				<source>Download Element</source>
+			</trans-unit>
+			<trans-unit id="content.edition">
+				<source>Edition Teaser</source>
+			</trans-unit>
+			<trans-unit id="content.slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="content.headerimage">
+				<source>Header Image</source>
+			</trans-unit>
+			<trans-unit id="content.youtube">
+				<source>YouTube</source>
+			</trans-unit>
+			<trans-unit id="content.video">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="content.imagemap">
+				<source>ImageMap</source>
+			</trans-unit>
+
+			<trans-unit id="header_1">
+				<source>Main</source>
+			</trans-unit>
+			<trans-unit id="header_2">
+				<source>Sub</source>
+			</trans-unit>
+			<trans-unit id="header_3">
+				<source>SubSub</source>
+			</trans-unit>
+
+			<trans-unit id="frame_layout.1">
+				<source>Full Wide</source>
+			</trans-unit>
+			<trans-unit id="frame_layout.edition-1">
+				<source>Current Edition</source>
+			</trans-unit>
+
+			<!--RTE Links-->
+			<trans-unit id="link_internal_altText">
+				<source>Opens internal link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_titleText">
+				<source>Opens internal link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_blank_altText">
+				<source>Opens internal link in new window</source>
+			</trans-unit>
+			<trans-unit id="link_internal_blank_titleText">
+				<source>Opens internal link in new window</source>
+			</trans-unit>
+
+			<trans-unit id="link_download_altText">
+				<source>Initiates file download</source>
+			</trans-unit>
+			<trans-unit id="link_download_titleText">
+				<source>Initiates file download</source>
+			</trans-unit>
+
+			<trans-unit id="link_folder_altText">
+				<source>Initiates open folder</source>
+			</trans-unit>
+			<trans-unit id="link_folder_titleText">
+				<source>Initiates open folder</source>
+			</trans-unit>
+
+			<trans-unit id="link_external_altText">
+				<source>Opens external link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_external_titleText">
+				<source>Opens external link in current window</source>
+			</trans-unit>
+			<trans-unit id="link_external_blank_altText">
+				<source>Opens external link in new window</source>
+			</trans-unit>
+			<trans-unit id="link_external_blank_titleText">
+				<source>Opens external link in new window</source>
+			</trans-unit>
+
+			<trans-unit id="link_mail_altText">
+				<source>Opens window for sending email</source>
+			</trans-unit>
+			<trans-unit id="link_mail_titleText">
+				<source>Opens window for sending email</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

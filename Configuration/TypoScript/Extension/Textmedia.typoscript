@@ -1,0 +1,75 @@
+tt_content {
+    textmedia {
+        settings {
+            columnPrefix {
+                medium = medium-
+            }
+
+            srcset >
+            srcset {
+                small = 480
+#                mobile = 720
+                medium = 960
+#                mlandscape = 1440
+                lightbox = 1920
+            }
+
+            sizes >
+            sizes {
+                medium = 39.875em
+            }
+        }
+
+        dataProcessing {
+            20 {
+                maxGalleryWidth.cObject = CASE
+                maxGalleryWidth.cObject {
+                    key.field = colPos
+
+                    0 = CASE
+                    0 {
+                        key.data = pagelayout
+
+                        pagets__default = TEXT
+                        pagets__default.value = 610
+
+                        pagets__belayout-1 = TEXT
+                        pagets__belayout-1.value = 960
+                    }
+
+                    1 = CASE
+                    1 {
+                        key.data = pagelayout
+
+                        pagets__default = TEXT
+                        pagets__default.value = 290
+                    }
+                }
+
+                maxGalleryWidthInText.cObject = CASE
+                maxGalleryWidthInText.cObject {
+                    key.field = colPos
+
+                    0 = CASE
+                    0 {
+                        key.data = pagelayout
+
+                        pagets__default = TEXT
+                        pagets__default.value = 300
+
+                        pagets__belayout-1 = TEXT
+                        pagets__belayout-1.value = 480
+                    }
+
+                    1 = CASE
+                    1 {
+                        key.data = pagelayout
+
+                        pagets__default = TEXT
+                        pagets__default.value = 200
+                    }
+                }
+            }
+        }
+    }
+}

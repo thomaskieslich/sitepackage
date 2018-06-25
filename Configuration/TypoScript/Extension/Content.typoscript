@@ -1,0 +1,6 @@
+lib.parseFunc_RTE {
+    nonTypoTagStdWrap.encapsLines {
+        nonWrappedTag >
+        innerStdWrap_all.ifBlank >
+    }
+}

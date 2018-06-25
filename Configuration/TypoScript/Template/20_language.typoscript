@@ -1,0 +1,24 @@
+//german = 0
+config {
+  linkVars = L
+  sys_language_uid = 0
+  language = de
+  locale_all = de_DE.UTF-8
+  htmlTag_setParams = lang="de"
+  sys_language_mode = content_fallback
+  sys_language_overlay = 1
+}
+
+page.bodyTagCObject.10.30.value = de
+
+[globalVar =  GP:L= 1]
+  //english = 1
+  config {
+    sys_language_uid = 1
+    language = en
+    htmlTag_setParams = lang="en"
+    locale_all = en_EN.UTF-8
+  }
+
+  page.bodyTagCObject.10.30.value = en
+[global]

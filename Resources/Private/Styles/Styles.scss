@@ -1,0 +1,30 @@
+$icon-path: '../Icons/';
+$image-path: '../Images/';
+$font-path: '../Fonts/';
+
+@import 'settings';
+@import '../../../Build/bower_components/foundation-sites/scss/foundation';
+
+
+@import 'Base/font-import';
+@import 'Base/font-awesome';
+//@import 'Base/foundation';
+@include foundation-everything(false);
+
+@import 'Base/typography';
+
+//Pages
+@import 'Pages/Base';
+@import 'Pages/Header';
+@import 'Pages/Main';
+@import 'Pages/Footer';
+@import 'Content/Navigation';
+
+//Content
+@import 'Content/Fsc';
+@import 'Content/Galleries';
+@import 'Content/Frames';
+@import 'Content/Tkcontent';
+
+@import 'Content/Lightbox';
+

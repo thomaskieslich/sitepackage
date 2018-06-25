@@ -1,0 +1,15 @@
+$icon-path: '../Icons/';
+$image-path: '../Images/';
+$font-path: '../Fonts/';
+
+@import 'settings';
+@import '../../../Build/bower_components/foundation-sites/scss/foundation';
+
+
+@import 'Base/font-import';
+//@import 'Base/font-awesome';
+
+@include foundation-typography;
+@include foundation-table;
+
+@import 'Base/typography';

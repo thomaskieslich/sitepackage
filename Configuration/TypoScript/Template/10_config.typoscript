@@ -1,0 +1,36 @@
+config {
+   sendCacheHeaders = 1
+   tx_realurl_enable = {$template.realurl}
+   absRefPrefix = auto
+   removeDefaultJS = external
+   moveJsFromHeaderToFooter = 1
+
+   concatenateCss = 1
+   concatenateJs = 1
+   compressJs = 1
+   compressCss = 1
+
+   noPageTitle = 1
+
+   spamProtectEmailAddresses = -2
+   spamProtectEmailAddresses_atSubst = (at)
+   #spamProtectEmailAddresses_lastDotSubst = _
+}
+
+[applicationContext = Development*]
+   config {
+      no_cache = 1
+      sendCacheHeaders = 0
+      contentObjectExceptionHandler = 0
+
+      # en-/ disable css/js concatenation
+      concatenateCss = 0
+      concatenateJs = 0
+
+      # en-/ disable css/js compression
+      compressJs = 0
+      compressCss = 0
+   }
+[end]
+
+page = PAGE

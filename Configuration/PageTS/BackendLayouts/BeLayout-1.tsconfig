@@ -1,0 +1,37 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            belayout-1 {
+                title = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:belayout_1
+                icon = EXT:sitepackage/Resources/Public/Icons/Page/belayout-1.svg
+                config {
+                    backend_layout {
+                        colCount = 12
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:belayout_col_30
+                                        colPos = 30
+                                        colspan = 12
+                                    }
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:belayout_col_0
+                                        colPos = 0
+                                        colspan = 12
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

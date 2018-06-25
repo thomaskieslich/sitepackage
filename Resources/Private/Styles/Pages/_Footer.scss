@@ -1,0 +1,7 @@
+.page-footer {
+  @include grid-row();
+}
+
+.page-footer-content {
+  @include grid-column(12);
+}

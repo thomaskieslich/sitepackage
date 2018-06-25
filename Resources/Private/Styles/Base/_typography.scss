@@ -1,0 +1,108 @@
+//RTE
+.cke_editable {
+  font-size: $global-font-size;
+  font-family: $body-font-family;
+}
+
+//.htmlarea-content-body {
+//  background-color: #f90;
+//  font-size: $global-font-size;
+//  font-family: $body-font-family;
+//  p {
+//    border: 1px solid $light-gray;
+//    position: relative;
+//    &:before {
+//      content: "p";
+//      position: absolute;
+//      left: 0;
+//      top: 0;
+//      z-index: -1;
+//      color: $light-gray;
+//      font-size: 85%;
+//    }
+//    p[value=" "] {
+//      background-color: orange;
+//    }
+//  }
+//}
+
+/* Left, center, right and justify alignment of text in block elements*/
+p, td, th,
+h1, h2, h3, h4, h5, h6,
+div, address {
+  &.align-left {
+    text-align: left;
+  }
+  &.align-center {
+    text-align: center;
+  }
+  &.align-right {
+    text-align: right;
+  }
+  &.align-justify {
+    text-align: justify;
+  }
+}
+
+span {
+  &.c-important {
+    color: #f90;
+  }
+  &.c-tiny {
+    color: #999999;
+    font-size: 75%;
+  }
+}
+
+p {
+  &.p-tiny {
+    color: #999999;
+    font-size: 75%;
+  }
+}
+
+/* Bullet styles for unordered lists.*/
+ul.component-items {
+  color: #186900;
+  list-style-type: circle;
+}
+
+ul.ul-style1 {
+  color: #8A0020;
+  //list-style-image: url(../../Images/red_arrow_bullet.png);
+}
+
+/* Numbering styles for ordered lists.*/
+ol.ul-style2 {
+  color: #10007B;
+  list-style-type: lower-roman;
+}
+
+//ol.action-items-ordered {
+//  color: #8A0020;
+//  list-style-type: lower-greek;
+//}
+
+/* Selectors for the default configuration of the link accessibity feature.*/
+a.external-link {
+}
+
+a.external-link-new-window {
+}
+
+a.internal-link {
+}
+
+a.internal-link-new-window {
+}
+
+a.download {
+}
+
+a.mail {
+}
+
+/* Default selector for indentation.*/
+div.indent {
+  margin-left: 2em;
+}

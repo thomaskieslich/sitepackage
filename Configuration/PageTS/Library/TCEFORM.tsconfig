@@ -1,0 +1,86 @@
+TCEFORM {
+    pages {
+        layout {
+            disabled = 0
+            removeItems = 3
+            altLabels {
+                1 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:page_layout.1
+                2 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:page_layout.2
+            }
+        }
+
+        categories {
+            disabled = 0
+        }
+    }
+
+    tt_content {
+        # header, textmedia, bullets, table, uploads, shortcut, list, div,html
+        #    menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages
+        #    , menu_sitemap, menu_sitemap_pages, menu_section, menu_section_pages
+        CType {
+            removeItems (
+                text, textpic, image,
+                bullets, table, uploads,
+                menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages,
+                menu_recently_updated, menu_related_pages, menu_sitemap, menu_sitemap_pages, menu_section, menu_section_pages,
+                shortcut, div, html,
+                login
+            )
+        }
+
+        layout {
+            disabled = 0
+            types {
+                textmedia {
+                    removeItems = 1,2,3
+                    addItems {
+                        100 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:celayout_1
+                        110 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:celayout_2
+                        115 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:celayout_3
+                    }
+                }
+
+                bullets {
+                    disabled = 1
+                    removeItems = 0,1,2,3
+                    addItems {
+                        #            100 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:celayout_3
+                    }
+                }
+
+                table {
+                    disabled = 1
+                    removeItems = 0,1,2,3
+                }
+
+                uploads {
+                    disabled = 1
+                    removeItems = 0,1,2,3
+                }
+            }
+        }
+
+        frame_class {
+            disabled = 0
+        }
+
+        space_before_class {
+            disabled = 0
+        }
+
+        space_after_class {
+            disabled = 0
+        }
+
+        header_layout {
+            disabled = 0
+            removeItems = 4,5
+            altLabels {
+                1 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:header_1
+                2 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:header_2
+                3 = LLL:EXT:sitepackage/Resources/Private/Language/locallang.xlf:header_3
+            }
+        }
+    }
+}

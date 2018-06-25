@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+<f:if condition="{menuMeta}">
+	<ul class="menu-meta menu">
+		<f:for each="{menuMeta}" as="item">
+			<f:render partial="Navigation/Elements/Item" arguments="{item: item}"/></li>
+		</f:for>
+	</ul>
+</f:if>
+
+</html>

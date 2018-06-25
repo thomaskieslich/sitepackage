@@ -1,0 +1,20 @@
+{
+	"name": "typo3-template",
+	"version": "1.0.0",
+	"authors": [
+		"Thomas Kieslich"
+	],
+	"description": "Template for Sites.",
+	"main": "gulpfile.js",
+	"license": "MIT",
+	"dependencies": {
+		"foundation-sites": "~6.4.0",
+		"fontawesome": "~4.7.0",
+		"colorbox": "~1.6.0",
+		"jquery-touchswipe": "~1.6.0",
+		"bx-slider.js": "~4.2.0",
+		"jquery-ui": "~1.12.0",
+		"jquery-ui-touch-punch-improved": "~0.3.0"
+	},
+	"private": true
+}

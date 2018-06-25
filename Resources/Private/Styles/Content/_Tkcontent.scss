@@ -1,0 +1,23 @@
+.frame-type {
+  &-cards {
+    > header,
+    > div {
+      @include grid-row();
+    }
+    > div {
+      > .card-row {
+        @include grid-row-nest();
+      }
+    }
+  }
+
+  &-googlemaps {
+    > header,
+    > div.link {
+      @include grid-row();
+    }
+    > div.link {
+      text-align: right;
+    }
+  }
+}

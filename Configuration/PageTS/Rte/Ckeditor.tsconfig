@@ -1,0 +1,4 @@
+//minimal, default, full, custom1, testing
+RTE.default.preset = minimal
+RTE.config.tt_content.bodytext.preset = custom1
+RTE.config.tx_news_domain_model_news.bodytext.preset = default

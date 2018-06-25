@@ -1,0 +1,112 @@
+// 1. Frames
+// ---------
+.frame {
+    //border: 1px solid red;
+    //@include breakpoint(medium down) {
+    //  @include grid-column-row();
+    //}
+    //&-default {
+    //  padding-top: $global-padding;
+    //  padding-bottom: $global-padding;
+    //
+    //  @include breakpoint(large) {
+    //    padding-top: $global-padding * 2;
+    //    padding-bottom: $global-padding * 2;
+    //  }
+    //}
+    &-type {
+        &-form_formframework,
+        &-header,
+        &-list,
+        &-textmedia,
+        &-table {
+           padding-top: map-get($frame-spaces, medium);
+           padding-bottom: map-get($frame-spaces, medium);
+
+            @include breakpoint(medium down) {
+                > header,
+                > form,
+                > table,
+                    //> div,
+                .ce-bodytext {
+                    @include grid-col-row();
+                }
+            }
+
+            @include breakpoint(large) {
+                padding-top: $global-padding * 2;
+                padding-bottom: $global-padding * 2;
+            }
+        }
+    }
+    //  //&-heroimage {
+    //  //  width: 100%;
+    //  //  img {
+    //  //    width: 100%;
+    //  //  }
+    //  //}
+    //  //&-cards {
+    //  //  header {
+    //  //    @include grid-col-row();
+    //  //  }
+    //  //}
+    //  //&-googlemaps {
+    //  //    header{
+    //  //        @include grid-col-row();
+    //  //    }
+    //  //  .link {
+    //  //    @include grid-col-row();
+    //  //    text-align: right;
+    //  //    a {
+    //  //      display: block;
+    //  //    }
+    //  //  }
+    //  //}
+    //}
+
+    //Layout
+    &-layout {
+        &-100 {
+            background-color: get-color(bg-1);
+        }
+        &-110 {
+            background-color: get-color(bg-2);
+        }
+        &-115 {
+            background-color: get-color(bg-3);
+        }
+    }
+
+    /* Spaces */
+    &.frame-space {
+        @each $key, $space in $frame-spaces {
+            &-before-#{$key} {
+                padding-top: $space !important;
+                //margin-top: $space;
+            }
+            &-after-#{$key} {
+                padding-bottom: $space !important;
+                //margin-bottom: $space;
+            }
+        }
+    }
+
+    //Frames
+    &-ruler-before:before {
+        content: '';
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+        margin-bottom: 2em;
+    }
+    &-indent {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    &-indent-left {
+        margin-left: 33%;
+    }
+    &-indent-right {
+        margin-right: 33%;
+    }
+
+}

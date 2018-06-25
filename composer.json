@@ -1,0 +1,26 @@
+{
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/thomaskieslich/sitepackage"
+		}
+	],
+	"name": "thomask/sitepackage",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Sitepackage",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Thomas Kieslich",
+			"email": "post@thomaskieslich.de",
+			"role": "Developer",
+			"homepage": "https://thomaskieslich.de/"
+		}
+	],
+	"require": {
+		"typo3/cms": "^8.7.0"
+	},
+	"replace": {
+		"sitepackage": "self.version"
+	}
+}

@@ -1,0 +1,70 @@
+body {
+    @include breakpoint(medium) {
+        //margin-top: 40px;
+    }
+
+    &.layout-default {
+        .page-main {
+            @include grid-row();
+        }
+        .content-left {
+            //@include grid-column(12);
+            @include breakpoint(medium) {
+                min-height: 0.1em;
+                @include grid-column(4);
+                @include grid-column-position(-8);
+            }
+        }
+        .content-main {
+            @include breakpoint(medium) {
+                min-height: 0.1em;
+                @include grid-column(8);
+                @include grid-column-position(4);
+            }
+        }
+    }
+
+    &.layout-belayout-1 {
+        .page-main {
+            .frame-type {
+                &-form_formframework,
+                &-header,
+                &-list,
+                &-textmedia,
+                &-table {
+                    > header,
+                    > form,
+                    > table,
+                    > div {
+                        @include grid-row();
+                    }
+                }
+                //&-heroimage {
+                //  width: 100%;
+                //  img {
+                //    width: 100%;
+                //  }
+                //}
+                //&-cards {
+                //  header {
+                //    @include grid-col-row();
+                //  }
+                //}
+                //&-googlemaps {
+                //    header{
+                //        @include grid-col-row();
+                //    }
+                //  .link {
+                //    @include grid-col-row();
+                //    text-align: right;
+                //    a {
+                //      display: block;
+                //    }
+                //  }
+                //}
+            }
+        }
+    }
+
+}
+

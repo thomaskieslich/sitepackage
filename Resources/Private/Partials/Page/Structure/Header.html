@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+<div class="title-bar" data-responsive-toggle="menu-main" data-hide-for="medium">
+	<div class="title-bar-left">
+		<f:link.page pageUid="{settings.pidRoot}" class="logo" title="Home">Home</f:link.page>
+	</div>
+	<div class="title-bar-right">
+		<div class="menu-icon" data-toggle="menu-main"> </div>
+	</div>
+</div>
+
+<div class="page-header">
+	<div class="top-bar">
+		<div class="top-bar-left">
+			<f:link.page pageUid="{settings.pidRoot}" class="logo top-bar-title" title="Home">Home</f:link.page>
+		</div>
+
+		<div class="top-bar-right">
+			<f:render partial="Navigation/Language" arguments="{_all}"/>
+			<f:render partial="Navigation/Meta" arguments="{_all}"/>
+		</div>
+	</div>
+</div>
+
+<div data-sticky-container>
+	<nav class="menu-main" id="menu-main" data-sticky data-options="marginTop:0;" data-top-anchor="50">
+		<f:render partial="Navigation/Main" arguments="{_all}"/>
+	</nav>
+</div>
+<div class="row breadcrumb">
+	<f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+</div>
+</html>

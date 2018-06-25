@@ -1,0 +1,58 @@
+//FontAwesome
+@include font-face(FontAwesome, #{$font-path}FontAwesome/fontawesome-webfont, normal, normal, ttf woff2 woff);
+
+@mixin fa-icon-style($icon, $size) {
+  content: $icon;
+  font: normal normal normal 14px FontAwesome;
+  font-size: #{$size}px;
+  text-rendering: auto;
+  //	-webkit-font-smoothing: antialiased;
+  //	-moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  line-height: 1;
+}
+
+//fa-icon('\f107', 35, 1, 4, 2);
+@mixin fa-icon($icon, $size: '14', $before: 1, $x: 0, $y: 0) {
+  @if $before == 1 {
+    &:before {
+      @include fa-icon-style($icon, $size);
+      position: relative;
+      top: $y * 1px;
+      left: $x * 1px;
+    }
+  } @else {
+    &:after {
+      @include fa-icon-style($icon, $size);
+      position: relative;
+      top: $y * 1px;
+      left: $x * 1px;
+    }
+  }
+
+}
+
+@mixin fa-icon-rotate($degrees, $rotation) {
+  transform: rotate($degrees);
+}
+
+@mixin fa-icon-flip($horiz, $vert, $rotation) {
+  transform: scale($horiz, $vert);
+}
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
